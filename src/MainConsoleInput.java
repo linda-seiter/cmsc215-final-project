@@ -44,7 +44,7 @@ public class MainConsoleInput {
         System.out.println("\n--- Meal List ---");
         for (Meal m : meals) {
             System.out.println(m); // polymorphic toString()
-            System.out.printf("Price: $%.2f%n", m.getPrice());
+            System.out.printf("Price: $%.2f%n", m.getPrice()); //polymorphic getPrice()
             System.out.println();
         }
 

@@ -8,16 +8,12 @@ public class DeluxeMeal extends Meal {
 
     @Override
     public double getPrice() {
-        double base = 12.00;
-        if (hasDessert) {
-            base += 3.00;
-        }
-        return base;
+        return hasDessert? 15 : 12;
     }
 
     @Override
     public String toString() {
-        return name + " is a deluxe meal with " + calories + " calories." +
+        return super.toString() +
                 (hasDessert ? " Includes dessert." : " No dessert.");
     }
 }

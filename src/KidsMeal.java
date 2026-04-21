@@ -8,11 +8,7 @@ public class KidsMeal extends Meal {
 
     @Override
     public double getPrice() {
-        double base = 5.00;
-        if (includesToy) {
-            base += 1.50;
-        }
-        return base;
+        return includesToy? 7.50 : 6.00;
     }
 
     @Override
