@@ -57,8 +57,8 @@ public class MainFileInput {
                         meals.add(new KidsMeal(name, calories, includesToy));
 
                     } else if (type.equalsIgnoreCase("D")) {
-                        boolean hasDessert = Boolean.parseBoolean(parts[3].trim());
-                        meals.add(new DeluxeMeal(name, calories, hasDessert));
+                        String dessert = parts[3].trim();
+                        meals.add(new DeluxeMeal(name, calories, dessert));
 
                     } else {
                         throw new InvalidMealDataException("Unknown meal type: " + type);

@@ -34,8 +34,8 @@ public class MainConsoleInput {
                 meals.add(new KidsMeal(name, calories, toy));
 
             } else if (choice == 2) {
-                System.out.print("Has dessert? (true/false): ");
-                boolean dessert = scanner.nextBoolean();
+                System.out.print("Enter dessert: ");
+                String dessert = scanner.nextLine().trim();
                 meals.add(new DeluxeMeal(name, calories, dessert));
             }
         }

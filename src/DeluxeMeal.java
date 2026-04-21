@@ -1,19 +1,24 @@
 public class DeluxeMeal extends Meal {
-    private boolean hasDessert;
+    private String dessert;
 
-    public DeluxeMeal(String name, int calories, boolean hasDessert) {
+    public DeluxeMeal(String name, int calories, String dessert) {
         super(name, calories);
-        this.hasDessert = hasDessert;
+        this.dessert = dessert;
     }
 
     @Override
     public double getPrice() {
-        return hasDessert? 15 : 12;
+        double price = 15;
+        if (getName().toLowerCase().contains("lobster"))
+            price += 10;
+        if (dessert.toLowerCase().contains("cake"))
+            price += 5;
+        return price;
     }
 
     @Override
     public String toString() {
         return super.toString() +
-                (hasDessert ? " Includes dessert." : " No dessert.");
+                ("Dessert: " + dessert);
     }
 }

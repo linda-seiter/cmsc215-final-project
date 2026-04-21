@@ -1,6 +1,7 @@
 K,Happy Meal,600,true
-D,Steak Dinner,1200,false
+D,Steak Dinner,2200,Chocolate Cake
 K,Mini Burger,450,false
-D,Lobster Feast,1500,true
+D,Lobster Feast,1800,Apple Pie
+D,Hamburger Dinner,1500,Oatmeal cookie
 K,Bad Calories,-200,true
 X,Unknown Meal,800,true
