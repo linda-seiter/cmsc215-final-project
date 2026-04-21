@@ -1,0 +1,6 @@
+K,Happy Meal,600,true
+D,Steak Dinner,1200,false
+K,Mini Burger,450,false
+D,Lobster Feast,1500,true
+K,Bad Calories,-200,true
+X,Unknown Meal,800,true
